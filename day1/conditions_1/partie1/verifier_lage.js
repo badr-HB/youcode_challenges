@@ -1,4 +1,5 @@
-let age = 1;
+const prompt = require("prompt-sync")();
+const age = prompt("entrer l'age: ");
 
 if(age >= 18){
     console.log("Accès autorisé");

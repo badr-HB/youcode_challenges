@@ -1,0 +1,23 @@
+{
+  "name": "youcode_challenges",
+  "version": "1.0.0",
+  "description": "all youcode challenges throught the sas period are here",
+  "homepage": "https://github.com/badr-HB/youcode_challenges#readme",
+  "bugs": {
+    "url": "https://github.com/badr-HB/youcode_challenges/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badr-HB/youcode_challenges.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
