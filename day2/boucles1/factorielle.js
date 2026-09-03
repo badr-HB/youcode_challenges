@@ -1,10 +1,9 @@
 const prompt = require('prompt-sync')();
 let N = prompt('entrer un nombre: ');
-let i = N;
+let i;
 let fois = 1;
 
-while(i>0){
+for (i = N; i > 0; i--) {
     fois *= i;
-    i--;
 }
-console.log('resulta: '+fois);
+console.log('resulta: ' + fois);
