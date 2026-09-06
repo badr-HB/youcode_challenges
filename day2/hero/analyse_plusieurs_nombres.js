@@ -1,35 +1,43 @@
-// const prompt = require('prompt-sync')();
-// let input;
-
-// let count = 0, somme = 0, moyenne = 0, max = 0, min = 0, posi = 0, nega = 0;
-
-// while (input != 0) {
-//     input = Number(prompt('saisie un nombre: '));
-//     if (input == 0) {
-//         break;
-//     }
-//     else if(){
-
-//     }
-// }
 const prompt = require('prompt-sync')();
-const array = [];
-let input, i = 0, j=0;
+let input;
 
-console.log('type 0 to cancel\n');
+let count = 0, somme = 0, max = 0, min = 0, posi = 0, nega = 0, trie = 1;
 
+while (input != 0) {
+    input = Number(prompt('saisie un nombre: '));
 
-do {
-    input = prompt('entre un fruit: ')
-    if (input != 0) {
-        array[i] = input;
-        i++;
+    if (trie == 1) {
+        max = input;
+        min = input;
+        trie--;
     }
 
-} while (!(input == 0))
+    if (input != 0) {
+        count++;
+        somme += input;
+        if (input > max) {
+            max = input;
+        }
+        if (input < min) {
+            min = input;
+        }
+        if (input > 0) {
+            posi++;
+        }
+        if (input < 0) {
+            nega++;
+        }
+    }
 
-console.log(array);
+    if (input == 0) {
+        break;
+    }
 
-do{
-
-}while()
+}
+console.log('Nombre des valeurs: ' + count);
+console.log('Somme: ' + somme);
+console.log('Moyenne: ' + (somme / count));
+console.log('Plus grand: ' + max);
+console.log('Plus petit: ' + min);
+console.log('Positif: ' + posi);
+console.log('Negatif: ' + nega);
