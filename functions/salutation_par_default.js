@@ -1,5 +1,9 @@
-function saluerClient(nom = ["nom"], titre = "client") {
+function saluerClient(nom = "nom", titre = "client") {
+
     return `Bonjour ${titre} ${nom}`;
 }
 
-console.log(saluerClient("ali"));
+console.log(saluerClient("ahmed"));
+
+
+
