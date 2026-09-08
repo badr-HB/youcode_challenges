@@ -6,7 +6,7 @@ function contientElement(tab, valeur) {
         }
     }
 
-    if (res1 == true) {
+    if (res1) {
         return res1;
     }
     else {
@@ -16,4 +16,3 @@ function contientElement(tab, valeur) {
 }
 
 console.log(contientElement(["pomme", "banane"], "pomme"));
-
